@@ -10,10 +10,10 @@ import java.io.*;
  */
 public class ResourceRewriter implements JarProcessor {
 
-    private final RewriterInput input;
+    private final LineRewriter input;
     private final boolean verbose;
 
-    public ResourceRewriter(RewriterInput input, boolean verbose) {
+    public ResourceRewriter(LineRewriter input, boolean verbose) {
         this.input = input;
         this.verbose = verbose;
     }

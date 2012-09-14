@@ -9,10 +9,10 @@ import java.util.List;
 /**
  * by Szczepan Faber, created at: 9/11/12
  */
-public class DefaultRewriterInput implements RewriterInput {
+public class DefaultLineRewriter implements LineRewriter {
     private final List<MatchableRule> rules = new LinkedList<MatchableRule>();
 
-    public DefaultRewriterInput(List<Rule> ruleList) {
+    public DefaultLineRewriter(List<Rule> ruleList) {
         for (Rule rule : ruleList) {
             rules.add(new MatchableRule(rule));
         }
